@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: hsl(0, 0%, 90%);
+  max-height: 100vh;
+  line-height: 120%;
+  /* word-spacing: 1px; */
+}
+
+.container {
+  width: 70%;
+  margin: 5% auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+}
+.box {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(168, 167, 167, 0.2);
+  padding: 20px;
+  color: hsl(210, 46%, 95%);
+}
+.box span {
+  opacity: 50%;
+  font-weight: 500;
+}
+.box .review-paragraph {
+  margin-top: 12px;
+  font-size: 87%;
+  opacity: 60%;
+  font-weight: 400;
+}
+
+.box img {
+  width: 32px;
+  border-radius: 50%;
+}
+.testimonial-user {
+  margin-bottom: 10px;
+  display: flex;
+  font-size: 70%;
+}
+.user-name {
+  margin-left: 10px;
+  align-self: center;
+}
+.box-1 {
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: top;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: hsl(263, 55%, 52%);
+}
+.box-2 {
+  background-color: hsl(217, 19%, 35%);
+}
+.box-3,
+.box-4 {
+  color: hsl(219, 29%, 14%);
+  background-color: hsl(0, 0%, 100%);
+}
+.box-3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.box-5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: hsl(219, 29%, 14%);
+}
+/* RESPONSIVE DESIGN  */
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+}
